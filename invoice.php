@@ -8,8 +8,8 @@ header('Location: index.php');
 <?php include('header.php'); ?>
 <div class="row">
 <?php
-$id=$_GET['id'];
-$_SESSION['proj_id'] = $id;
+//$id=$_GET['id'];
+//$_SESSION['proj_id'] = $id;
   include "quatermenus.php"; 
 ?>
 </div>

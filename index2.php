@@ -9,7 +9,7 @@ header('Location: index.php');
 <div class="row">
 <?php
     $jquery1="SELECT * from project order by proj_name";
-    $jsend1=mysql_query($jquery1) or die("<div class='error'>Error! Not select 1</div>");
+    $jsend1=mysql_query($jquery1) or die("<div class='error'>Error! Not selected</div>");
    while( $jresult=mysql_fetch_array($jsend1))
    {
     if ($jresult)

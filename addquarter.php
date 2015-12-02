@@ -17,7 +17,7 @@ header('Location: index.php');
          quart_type, budget, est_phy_progr, start_time,end_time) VALUES (
          '".$_SESSION['proj_id']."', '".$_SESSION['quart_id']."', '".$budget."', '".$physi_Pro."',
          '".$start."', '".$end."')";
-       $ex=mysql_query($query) or die("<div class='error'>Error! Not inserted</div>");
+       $ex=mysql_query($query) or die("<div class='error'>Error! Not inserted</div>".mysql_error());
         if($ex)
         {
             include('workform.php');

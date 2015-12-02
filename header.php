@@ -138,7 +138,7 @@
 ?>
                         
                                 <li>
-                                    <a href="projectview.php?id= <?php echo $jresult['proj_id']?>"><?php echo $jresult['proj_name']?></a>
+                                    <a href="projectview.php?id=<?php echo $jresult['proj_id']?>"><?php echo $jresult['proj_name']?></a>
                                 </li>
                              
 						 

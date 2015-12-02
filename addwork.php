@@ -28,7 +28,7 @@ header('Location: index.php');
        $err="Work  is  Saved";
            echo '<div class="row">';
            echo "<div class=\"alert alert-success\">";
-          echo "<strong> Error! </strong>";
+          echo "<strong> Success! </strong>";
          echo "$err <br>";
           echo "</div>";
            echo "</div>";
