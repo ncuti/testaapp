@@ -35,7 +35,27 @@ $_SESSION['proj_id'] = $id;
     }
     else
     {
-         include"viewquater1.php";
+        //include"viewquater1.php";
+     ?>    
+         <script>
+function showInvoice(str) {
+  var xhttp;    
+  if (str == "") {
+    document.getElementById("txtHint").innerHTML = "";
+    return;
+  }
+  xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      document.getElementById("table").innerHTML = xhttp.responseText;
+    }
+  };
+  xhttp.open("GET", "viewquater1.php?quater="+str, true);
+  xhttp.send();
+}
+</script>
+     <?php
     }
     ?>
+    <div id="table"></div>
 </div>

@@ -1,5 +1,5 @@
                              <ul class="nav nav-tabs">
-                                <li class="active"><a href="#home" data-toggle="tab">Quater One</a>
+                                <li onclick="showInvoice('1')" class="active"><a href="#home" data-toggle="tab" >Quater One</a>
                                 </li>
                                 <li><a href="#profile" data-toggle="tab">Quater Two</a>
                                 </li>
